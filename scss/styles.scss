@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Mako');
+@import url('https://fonts.googleapis.com/css?family=Londrina+Shadow');
+@import url('https://fonts.googleapis.com/css?family=Ranchers');
+
+$defaultBackground: #0099FF;
+$defaultFont: 'Londrina Shadow', cursive;
+$secondaryFont: 'Mako', cursive;
+$fontColor: #fff;
+$fontSize: 54px;
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $defaultBackground;
+}
+
+header {
+  padding: 1%;
+
+  #selfie {
+
+    img {
+      display: block;
+      margin: 12px auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+    }
+  }
+
+// *********Social icons
+
+  .icons {
+    position: relative;
+    margin: 0 auto;
+
+    img {
+      width: 54px;
+      height: 54px;
+      opacity: 0.85;
+    }
+
+    .linkedin, .google, .behance, .github {
+      position: absolute;
+    }
+
+    .linkedin {
+      left: 680px;
+      top: -72px;
+    }
+
+    .google {
+      left: 760px;
+      top: -72px;
+    }
+
+    .behance {
+      right: 760px;
+      top: -72px;
+    }
+
+    .github {
+      right: 680px;
+      top: -72px;
+    }
+  }
+
+//********* My Name & Title
+
+  .name {
+    text-align: center;
+    margin: 2%;
+
+    h1, h3 {
+      font-family: $defaultFont;
+      color: $fontColor;
+      letter-spacing: .125em;
+    }
+
+    h1 {
+      margin: 0 auto;
+      width: 600px;
+      font-size: $fontSize;
+      border-bottom: 1px solid $fontColor;
+    }
+
+    h3 {
+      font-size: $fontSize - 24;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+section {
+  width: 600px;
+  margin: 0 auto;
+
+  .about {
+    text-align: center;
+
+    p {
+      color: $fontColor;
+      font-family: $secondaryFont;
+      font-weight: lighter;
+      line-height: 45px;
+    }
+  }
+}
+
+.button {
+  background: darken($defaultBackground, 6%);
+  width: 300px;
+  height: 72px;
+  border-radius: 12px;
+  margin: 0 auto;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-family: $defaultFont;
+    text-align: center;
+    font-size: $fontSize;
+    font-weight: 500;
+    color: $fontColor;
+  }
+}
+
+//********* Individual Button details
+
+.one {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.two {
+  margin: 54px auto;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+
+  .window {
+    margin: 24px 0;
+    width: 100%;
+    height: 150px;
+    border: 1px solid $fontColor;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 1px 3px 3px rgba(0,0,0,0.3);
+  }
+}
+
+footer {
+  background: darken($defaultBackground, 6%);
+  text-align: center;
+
+  span {
+    display: inline-block;
+    font-family: $secondaryFont;
+    color: $fontColor;
+    font-size: $fontSize - 40;
+    margin: 0 8px;
+  }
+}

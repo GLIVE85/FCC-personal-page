@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Glenn Straughn, Designer/Developer</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header id="home">
+
+  <!--  My Picture  -->
+    <div id="selfie">
+      <img src="images/me.jpg">
+    </div>
+
+  <!--  Contact Links  -->
+    <div class="icons">
+
+      <a class="linkedin" href="https://www.linkedin.com/in/glenn-straughn-1a10528b/" target="_blank"><img src="http://res.cloudinary.com/dptycqm3f/image/upload/v1486246766/hollow-cut-linkedin_uw37xv.svg"></a>
+
+      <a class="google" href="mailto:glenn@yonative.co" target="_blank"><img src="http://res.cloudinary.com/dptycqm3f/image/upload/v1486246766/hollow-cut-google_ucswkg.svg"></a>
+
+      <a class="behance" href="https://www.behance.net/glennstrau55e8" target="_blank"><img src="http://res.cloudinary.com/dptycqm3f/image/upload/v1486246766/hollow-cut-behance_k2qayg.svg"></a>
+
+      <a class="github" href="https://github.com/GLIVE85" target="_blank"><img src="http://res.cloudinary.com/dptycqm3f/image/upload/v1486246766/hollow-cut-github_uz5v9k.svg"></a>
+    </div>
+
+  <!--  My name and title  -->
+    <div class="name">
+      <h1>Glenn Straughn</h1>
+      <h3>Designer/Developer</h3>
+    </div>
+
+  </header>
+
+  <!-- About Me -->
+  <section>
+    <div class="about">
+      <p>Hi. I'm a brand new designer and developer based in Charleston, SC. I fell in love with coding about 6 months ago and have been hard at work and study ever since. I currently work as a maintenance technician for Greystar.  Please help me stop myself from wasting 9 hours of precious design and development time per day, and let me put my skills to work for you.  Thanks for looking, and if you have any words of advice or wisdom, give it to me straight.</p>
+    </div>
+  </section>
+
+  <!-- Project Button -->
+  <div class="button one">
+    <a href="#target"><h1>Projects</h1></a>
+  </div>
+
+  <!-- Projects -->
+  <div class="container">
+    <div class="window" id="target">
+      <a href"#"><img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=960%C3%97150&w=960&h=150"></a>
+    </div>
+    <div class="window">
+      <a href"#"><img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=960%C3%97150&w=960&h=150"></a>
+    </div>
+    <div class="window">
+      <a href"#"><img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=960%C3%97150&w=960&h=150"></a>
+    </div>
+    <div class="window">
+      <a href"#"><img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=960%C3%97150&w=960&h=150"></a>
+    </div>
+  </div>
+
+  <!-- Home Button -->
+  <div class="button two">
+    <a href="#home"><h1>Home</h1></a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <span>Designed and Developed by Glenn Straughn &copy; 2017</span>
+  </footer>
+
+<!-- Jquery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+
+  $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+          || location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+             if (target.length) {
+               $('html,body').animate({
+                   scrollTop: target.offset().top
+              }, 1000);
+              return false;
+          }
+      }
+  });
+
+</script>
+
+
+</body>
+</html>
